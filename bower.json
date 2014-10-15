@@ -1,0 +1,15 @@
+{
+  "name": "bootstarp",
+  "version": "0.3.0",
+  "main": "_public/js/app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+      "bootstrap" : ""
+  },
+  "overrides": {
+  }
+}
