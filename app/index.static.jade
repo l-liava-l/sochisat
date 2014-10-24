@@ -6,12 +6,13 @@ html(lang="ru")
         link(rel="stylesheet" href="css/app.css")
         script(src="js/vendor.js")
         script(src="js/app.js")
-    body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
 
+    body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
         include blocks/header/header.static.jade
         include blocks/about/about.static.jade
         include blocks/services/services.static.jade
-        include blocks/employees/employees.static.jade
+        include blocks/team/team.static.jade
         include blocks/comments/comments.static.jade
         include blocks/footer/footer.static.jade
+        //include blocks/employees/employees.static.jade
 
