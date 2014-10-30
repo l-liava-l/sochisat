@@ -1,33 +1,48 @@
 div(class="b-slider" class="hidden-xs")
     div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
-        ol(class="carousel-indicators")
-            li(data-target="#carousel-example-generic" data-slide-to="0" class="active")
-            li(data-target="#carousel-example-generic" data-slide-to="1")
-            li(data-target="#carousel-example-generic" data-slide-to="2")
-            li(data-target="#carousel-example-generic" data-slide-to="3")
+
 
         div(class="carousel-inner")
-           // div(class="item active building")
+            div(class="item active building")
                 img(src="img/slides/build.png" alt="...")
                 div(class="carousel-caption")
                     h2 Торгово-монтажная организация </br>
                         small Специализируемся на слаботочных системах
 
-            div(class="item videoSec active")
-                img(src="http://livedemo00.template-help.com/joomla_47946/images/slider/slide-3.jpg?1414593823460" alt="...")
+            div(class="item videoSec")
+                img(src="img/slides/cam.jpg" alt="...")
                 div(class="carousel-caption")
                     h2 Видеонаблюдение в Сочи
-                        button( type="button" class="btn btn-default") Больше информации
+                        button( type="button" class="btn btn-default") Дополнительная информация
                             span(class="glyphicon glyphicon-chevron-right")
 
-            //div(class="item")
+            div(class="item")
                 video(src="http://livedemo00.template-help.com/joomla_51950/media/video/video.mp4" autoplay="true" loop)
                 img(src="img/slides/empty.png" alt="...")
                 div(class="carousel-caption")
+                    h2 Ремонт компьютеров, телевизоров, </br> тв приставок в Сочи
 
-            //div(class="item")
+            div(class="item homeSec")
+                img(src="img/slides/homePhone.png" alt="...")
+                div(class="carousel-caption")
+                    h2 Охранные системы </br>
+                        small домофоны,
+                        small сигнализация</br>
+                        button( type="button" class="btn btn-default") Дополнительная информация
+                            span(class="glyphicon glyphicon-chevron-right")
+
+
+            div(class="item homeSec sat")
                 img(src="img/slides/sat.png" alt="...")
                 div(class="carousel-caption")
+                    h2 ТВ оборудование </br>
+                        small(class="sat-small") Спутниковое и эфирное </br>
+                        small Триколор, Нтв+</br>
+                        button( type="button" class="btn btn-default") Дополнительная информация
+                            span(class="glyphicon glyphicon-chevron-right")
+
+
+
 
 
         a(class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev")
