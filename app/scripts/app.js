@@ -6,8 +6,6 @@ $(document).ready(function() {
     $('body').scrollspy({ target: '.navbar-collapse' });
 
 
-
-
     (function() {
 
         var comments = document.getElementsByClassName('comment');
@@ -28,4 +26,8 @@ $(document).ready(function() {
             $(comments[currentComment]).show();
         }
     })();
+
+
+
+
 });
