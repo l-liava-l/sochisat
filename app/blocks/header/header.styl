@@ -1,9 +1,11 @@
 .b-header
   position: fixed;
   z-index: 20;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   font-family: 'Roboto';
   min-width: 100%;
+  padding: 0;
+
 
 .b-header
   .red-color
@@ -12,9 +14,22 @@
 
 
 .b-header .logo
-  font-size: 150%;
+  margin-top: 7px;
+  font-size: 200%;
 
 
+.b-header nav
+  min-height: 70px;
+  background: #FFFFFF;
+  border-radius: 0px !important;
 
-
-
+.b-header nav:after
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  content: '';
+  opacity: 0.3;
+  z-index: 90;
