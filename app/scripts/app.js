@@ -1,7 +1,9 @@
+
 $(document).ready(function() {
-    $('#b-work-with .label').hover(function(event) {
-        $(event.target).tooltip('show');
-    });
+
+    //$('#b-work-with .label').hover(function(event) {
+    //    $(event.target).tooltip('show');
+    //});
 
     $('body').scrollspy({ target: '.navbar-collapse' });
 
@@ -26,8 +28,4 @@ $(document).ready(function() {
             $(comments[currentComment]).show();
         }
     })();
-
-
-
-
 });
