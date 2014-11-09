@@ -8,22 +8,52 @@ div(class="b-header")
                          span(class="icon-bar")
                          span(class="icon-bar")
                          span(class="icon-bar")
-                    a(class="logo navbar-brand") SOCHI<color class="red-color">SAT</color>
+                    a(class="logo navbar-brand")
+                        img(src="img/logo.png" style="max-height: 40px;")
+
 
 
 
                 div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
-                    ul(class="nav navbar-nav hidden-sm")
+                    ul(class="nav navbar-nav")
                         li(class="active")
-                            a(href="#b-about") Реквизиты
-                        li
-                            a(href="#b-comments") Отзывы
+                            a(href="index.html") О компании
 
-                    ul(class="nav navbar-nav navbar-right")
+                        li(class="")
+                            a(href="contacts.html") Реквизиты
+
+                        li(class="dropdown")
+                            a(href="#" class="dropdown-toggle" data-toggle="dropdown") Услуги
+                                span( class="caret")
+                            ul(class="dropdown-menu" role="menu")
+                                li
+                                    a(href="#") Видеонаблюдение
+                                li
+                                    a(href="#") Домофоны
+                                li
+                                    a(href="#") СКУД
+
+                                li(class="divider")
+
+                                li
+                                    a(href="#") Спутниковое ТВ
+
+                                li(class="divider")
+
+                                li
+                                    a(href="#") Ремонт компьютеров
+                                li
+                                    a(href="#") Ремонт телевизоров
+
+
+
+
+
+                    ul(class="nav navbar-nav navbar-right hidden-sm hidden-xs")
                         li
-                            a(class="glyphicon glyphicon-envelope" href="#")  mail@sochisat.ru
+                            a(class="glyphicon contact glyphicon-envelope" href="#")  tok@gmail.com
                         li
-                            a(class="glyphicon glyphicon-phone-alt" href="#")  8(862)237-27-30
+                            a(class="glyphicon contact glyphicon-phone-alt" href="#")  8(862)237-27-30
                         li
-                            a(class="glyphicon glyphicon-earphone" href="#")  8(918)601-41-81
+                            a(class="glyphicon contact glyphicon-earphone" href="#")  8(918)601-41-81
 
