@@ -1,4 +1,10 @@
 
+function setPage(href) {
+    $('#mainMenu li').removeClass('active');
+    $('a[href="'+ href + '"]').parent().addClass('active');
+}
+
+
 $(document).ready(function() {
 
     //$('#b-work-with .label').hover(function(event) {
@@ -6,6 +12,8 @@ $(document).ready(function() {
     //});
 
     $('body').scrollspy({ target: '.navbar-collapse' });
+
+
 
 
     (function() {

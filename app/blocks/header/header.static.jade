@@ -19,12 +19,12 @@ div(class="b-header")
 
 
                 div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-2")
-                    ul(class="nav navbar-nav")
+                    ul(class="nav navbar-nav" id="mainMenu")
                         li(class="active")
-                            a(href="index.html") О компании
+                            a(href="/") О компании
 
                         li(class="")
-                            a(href="contacts.html") Реквизиты
+                            a(data-toggle="modal" data-target="#information-modal") Реквизиты
 
                         li(class="dropdown")
                             a(href="#" class="dropdown-toggle" data-toggle="dropdown") Услуги
@@ -49,21 +49,65 @@ div(class="b-header")
 
                     ul(class="nav navbar-nav navbar-right hidden-sm hidden-xs")
                         li
-                            a(class="glyphicon contact glyphicon-envelope")  tok@gmail.com
+                            a(class="glyphicon contact glyphicon-envelope")  sochisat@mail.ru
                         li
                             a(class="glyphicon contact glyphicon-phone-alt")  8(862)237-27-30
                         li
                             a(class="glyphicon contact glyphicon-earphone")  8(918)601-41-81
-
-
 
 
                 div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
                     ul(class="nav navbar-nav navbar-right visible-sm visible-xs")
                         li
-                            a(class="glyphicon contact glyphicon-envelope")  tok@gmail.com
+                            a(class="glyphicon contact glyphicon-envelope")  sochisat@mail.ru
                         li
                             a(class="glyphicon contact glyphicon-phone-alt")  8(862)237-27-30
                         li
                             a(class="glyphicon contact glyphicon-earphone")  8(918)601-41-81
 
+
+div(class="modal fade" id="information-modal" tabindex="-1" role="dialog" aria-labelledby="Реквизиты" aria-hidden="true")
+    div(class="modal-dialog")
+        div(class="modal-content")
+            div(class="modal-header")
+                button(type="button" class="close" data-dismiss="modal")
+                    span(aria-hidden="true") &times;
+                    span(class="sr-only") Закрыть
+                h4(class="modal-title")  Реквизиты
+            div(class="modal-body")
+
+                dl(class="dl-horizontal")
+                    dt ИП
+                    dd Клочков Владимир Владимирович
+                    dt ИНН
+                    dd 233008524609
+                    dt ОГРНИП
+                    dd 314237328000031
+
+                dl(class="dl-horizontal")
+                    dt Банк
+                    dd Филиал «Южный» ОАО «УРАЛСИБ»
+                    dt БИК
+                    dd 040349700
+                    dt Р./сч.
+                    dd 40802810247030000004
+                    dt К./сч.
+                    dd 30101810400000000700
+
+
+                dl(class="dl-horizontal")
+                    dt Телефон
+                    dd 8(862)237-27-30
+                    dt Телефон
+                    dd 8(918)601-41-81
+                    dt Адрес
+                    dd г.Сочи, ул.Конституции 44
+                    dt Email
+                    dd sochisat@mail.ru
+
+
+
+
+            div(class="modal-footer")
+                button(type="button" class="btn btn-default btn-yellow" data-dismiss="modal") Закрыть
+                    span(class="glyphicon glyphicon-chevron-right")
