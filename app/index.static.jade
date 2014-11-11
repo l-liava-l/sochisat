@@ -9,14 +9,32 @@ html(lang="ru")
 
     body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
         include blocks/header/header.static.jade
-        div(class="b-slider" class="hidden-xs")
+        div(class="b-slider" class="hidden-xs hidden-sm")
             div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
                 div(class="carousel-inner")
                     div(class="item active building active")
-                        img(src="img/slides/build.jpg" alt="...")
-                        div(class="carousel-caption fadein")
-                            h2 Торгово-монтажная организация </br>
-                                small Специализируемся на слаботочных системах
+                        img(src="img/slides/empty.png" alt="...")
+                        div(class="carousel-caption fadein row")
+                            div(class="sliderHeader col-md-8 col-lg-8")
+                                h1 Слаботочные сети</br>
+                                h3( class="text-right text-gold") Продажа, монтаж, обслуживание
+                                h3(class="visible-lg") Спутниковое ТВ (<gold-light>НТВ+</gold-light>, <gold-light>ТРИКОЛОР</gold-light>)
+                                h3(class="visible-lg") Видеонаблюдение и домофоны
+                                h3(class="visible-lg") СКУД, охранная сигнализаця
+                                h3(class="visible-lg") Ремонт ПК и ТВ
+
+                            div(class="col-lg-4 col-md-4")
+                                form(class="form-inline" role="form")
+                                    h3 Оставить заявку
+                                    div(class="form-group")
+                                        label(class="sr-only" for="form-name") ФИО
+                                        input(type="email" class="form-control input-lg" id="form-name" placeholder="ФИО")
+                                        br
+                                        label(class="sr-only" for="form-contacts") Email или телефон
+                                        input(type="email" class="form-control input-lg" id="form-contacts" placeholder="Email или телефон")
+                                        button(type="button" class="btn btn-primary btn-lg btn-block") Отправить
+
+
 
         //include blocks/slider/slider.static.jade
         include blocks/about/about.static.jade
