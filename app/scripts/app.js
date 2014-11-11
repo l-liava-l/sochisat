@@ -1,6 +1,6 @@
 
 function setPage(href) {
-    $('#mainMenu li').removeClass('active');
+    $('.mainMenu li').removeClass('active');
     $('a[href="'+ href + '"]').parent().addClass('active');
 }
 
