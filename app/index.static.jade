@@ -9,23 +9,24 @@ html(lang="ru")
 
     body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
         include blocks/header/header.static.jade
-        div(class="b-slider" class="hidden-xs hidden-sm")
+        div(class="b-slider" class="hidden-xs")
             div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
                 div(class="carousel-inner")
                     div(class="item active building active")
                         img(src="img/slides/empty.png" alt="...")
                         div(class="carousel-caption fadein row")
-                            div(class="sliderHeader col-md-8 col-lg-8")
+                            div(class="sliderHeader col-md-7 col-lg-6 col-sm-6")
                                 h1 Слаботочные сети</br>
-                                h3( class="text-right text-gold") Продажа, монтаж, обслуживание
-                                h3(class="visible-lg") Спутниковое ТВ (<gold-light>НТВ+</gold-light>, <gold-light>ТРИКОЛОР</gold-light>)
-                                h3(class="visible-lg") Видеонаблюдение и домофоны
-                                h3(class="visible-lg") СКУД, охранная сигнализаця
-                                h3(class="visible-lg") Ремонт ПК и ТВ
+                                p( class="text-right text-gold") Продажа, монтаж, обслуживание
+                                p
+                                p Спутниковое ТВ (<gold-light>НТВ+</gold-light>, <gold-light>ТРИКОЛОР</gold-light>)
+                                p Видеонаблюдение и домофоны
+                                p СКУД, охранная сигнализаця
+                                p Ремонт ПК и ТВ
 
-                            div(class="col-lg-4 col-md-4")
+                            div(class="col-lg-4 col-md-5 col-sm-5 col-lg-offset-1")
                                 form(class="form-inline" role="form")
-                                    h3 Оставить заявку
+                                    h3 Перезвонить Вам?
                                     div(class="form-group")
                                         label(class="sr-only" for="form-name") ФИО
                                         input(type="email" class="form-control input-lg" id="form-name" placeholder="ФИО")

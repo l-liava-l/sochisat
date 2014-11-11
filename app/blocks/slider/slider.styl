@@ -1,4 +1,6 @@
 .b-slider
+
+  padding-top: 50px;
   overflow: hidden;
   max-height: 606px;
   padding-top: 15px;
@@ -7,8 +9,9 @@
 
 .b-slider .carousel-control
   z-index: 20;
+
 .b-slider .carousel-caption
-  top: 20%;
+  top: 15%;
 
 
 .b-slider .sliderHeader
@@ -20,7 +23,6 @@
 .b-slider .building .text-gold
     color: #fbb50d
     margin: 0;
-    padding-right: 100px;
 
 .b-slider .carousel-caption h2 small
 
@@ -48,17 +50,47 @@
   max-height: 540px;
   overflow: hidden;
 
+.b-slider .carousel-caption h1
+
+  margin-bottom: 0px;
+
+
+
+
+
+
+@media (max-width: 970px)
+  .b-slider .carousel-caption
+    padding-bottom: 30px;
+    right: 10%;
+    left: 10%;
+    top:5%;
+
+
+
+
+
 
 
 @media (max-width: 1400px)
-  .b-slider .carousel-caption h1
-    font-size: 200%
-  .b-slider .carousel-caption h2
-    font-size: 200%
-  .b-slider .carousel-caption h3
-    font-size: 150%
+  .b-slider .carousel-caption
+    h1
+      font-size: 250%
+    p
+      font-size: 150%;
 
-@media (min-width: 1921px)
-  .b-slider
-    width: 1920px;
-    margin: 0 auto
+
+@media (min-width: 1401px)
+
+  .b-slider .carousel-caption
+    h1
+      font-size: 350%
+    p
+      font-size: 150%;
+
+@media (max-width: 1100px)
+  .b-slider .carousel-caption
+    h1
+      font-size: 150%
+    p
+      font-size: 100%;
