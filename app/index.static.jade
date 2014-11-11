@@ -9,6 +9,15 @@ html(lang="ru")
 
     body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
         include blocks/header/header.static.jade
+        div(class="b-slider" class="hidden-xs")
+            div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+                div(class="carousel-inner")
+                    div(class="item active building active")
+                        img(src="img/slides/build.jpg" alt="...")
+                        div(class="carousel-caption fadein")
+                            h2 Торгово-монтажная организация </br>
+                                small Специализируемся на слаботочных системах
+
         //include blocks/slider/slider.static.jade
         include blocks/about/about.static.jade
         include blocks/services/services.static.jade

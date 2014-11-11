@@ -13,7 +13,10 @@ $(document).ready(function() {
 
     $('body').scrollspy({ target: '.navbar-collapse' });
 
-
+    setTimeout(
+        function(){
+            $('.fadein').fadeIn(700)
+        }, 300);
 
 
     (function() {
