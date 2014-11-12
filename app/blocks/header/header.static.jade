@@ -1,25 +1,17 @@
-div(class="b-header")
+div(class="header")
     nav(class="navbar navbar-default" role="navigation")
         div(class="container")
             div(class="container-fluid")
-                div(class="navbar-header")
-
-                    //button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2")
-                        span(class="sr-only")
-                        span(class="glyphicon glyphicon-list")
-
-
-
-                    a(class="logo navbar-brand hidden-xs")
+                div(class="navbar-header hidden-xs")
+                    a(class="logo navbar-brand")
                         img(src="img/logo.png" style="max-height: 40px;")
 
-
-
+                //phones
                 div(class="visible-xs")
                     ul(class="nav nav-xs navbar-nav col-xs-12" class="mainMenu")
 
                         a(class="logo navbar-brand col-xs-2")
-                            img(src="img/logoXS.png" style="max-height: 30px;")
+                            img(src="img/logoXS.png" style="max-height: 30px")
 
                         li(class="active col-xs-4")
                             a(href="/") О компании
@@ -44,8 +36,9 @@ div(class="b-header")
                         li(class="col-xs-3")
                             a(data-toggle="modal" data-target="#information-modal") Реквизиты
 
+                //tablets and desktops
                 div(class="hidden-xs")
-                    ul(class="nav navbar-nav" class="mainMenu")
+                    ul(class="nav navbar-nav main-menu")
 
                         li
                             a(href="/") О компании
@@ -78,7 +71,6 @@ div(class="b-header")
                             a(class="glyphicon contact glyphicon-phone-alt")  8(862)237-27-30
                         li
                             a(class="glyphicon contact glyphicon-earphone")  8(918)601-41-81
-
 
 
 

@@ -1,64 +1,61 @@
-.b-header
+.header
+  font-family: 'Roboto';
   position: fixed;
   z-index: 22;
   margin: 0 0 30px 0;
-  font-family: 'Roboto';
   min-width: 100%;
   padding: 0;
 
+  .logo
+    margin-top: -10px;
+    font-size: 170%;
+  nav
+    min-height: 0px;
+    background: #ffffff;
+    border-radius: 0px;
 
-.b-header
-  .red-color
-    color: #af1f1a;
-    font-weight: bold;
+  nav:after
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    content: '';
+    opacity: 0.3;
+    z-index: 90;
 
-
-.b-header .logo
-  margin-top: -10px;
-  font-size: 170%;
-
-
-
-.b-header nav
-  min-height: 0px;
-  background: #ffffff;
-  border-radius: 0px !important;
-
-.b-header nav:after
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: #fff;
-  content: '';
-  opacity: 0.3;
-  z-index: 90;
-
-.b-header .contact:hover, .b-header .contact
+  .contact, .contact:hover
     color: #282828 !important;
 
+
 @media (max-width: 1024px)
-  .b-header .logo
-    font-size: 150%;
+  .header
+    .logo
+      font-size: 150%;
+
+    .main-menu > li  a
+      padding-left: 10px;
+      padding-right: 10px;
+
+
 
 @media (max-width: 767px)
-  .b-header .nav-xs li
-    text-align: center;
-    padding: 2px;
-    min-height: 100%;
-    a
-      min-height: 100%;
-      padding: 10px 0 10px 0;
-      margin: 2px
-  .b-header .navbar-nav
-    padding: 0px;
-
+  .header
+      .nav-xs li
+        text-align: center;
+        padding: 2px;
+        min-height: 100%;
+        a
+          min-height: 100%;
+          padding: 10px 0 10px 0;
+          margin: 2px
+      .main-menu
+        padding: 0px;
 
 
 @media (max-width: 1200px)
-  .b-header .container {
+  .header .container
     width: 100%;
     padding: 0
     margin: 0
-  }
