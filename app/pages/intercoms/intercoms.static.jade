@@ -9,7 +9,7 @@ html(lang="ru")
     body
         //include blocks/header/header.static.jade
         //include blocks/slider/slider.static.jade
-        include blocks/header/header.static.jade
+        include ../../blocks/header/header.static.jade
         div(class="b-slider" class="hidden-xs")
             div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
                 div(class="carousel-inner")
@@ -46,9 +46,8 @@ html(lang="ru")
                     h3 Прайс:
                         small  (основные позиции)
                     div()
-                        include prices/cctv.html
                     br
                     h4 Где это используется?
                     p Видеонаблюдение необходимо для офисных и производственных помещений, магазинов, частных домов и других объектов, которые нуждаются в круглосуточной охране. Установка камер видеонаблюдения значительно повысит уровень безопасности, предотвратит возможные издержки, воровство, акты вандализма и окажет психологическое влияние на злоумышленика. </br>Поможет Вам наблюдать за работой сотрудников тем самым увеличив продуктивность.
-        include blocks/footer/footer.static.jade
+        include ../../blocks/footer/footer.static.jade
         script setPage('intercoms.html');

@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(http-equiv="content-type" content="text/html; charset=utf-8")
+        link(rel="stylesheet" href="css/app.css")
+        script(src="js/vendor.js")
+        script(src="js/app.js")
+
+    body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
+        include ../../blocks/header/header.static.jade
+        include ../../blocks/modal-inform/modal-inform.static.jade
+
+        include ./blocks/big-img.static.jade
+        include ./blocks/about.static.jade
+        include ./blocks/services.static.jade
+
+        include ../../blocks/footer/footer.static.jade
+
+    script setPage('/');
+
