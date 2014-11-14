@@ -1,0 +1,63 @@
+.b-slider
+  overflow: hidden;
+  border-bottom: 1px solid #000000;
+  background: #3c3c3c url(../img/bgslider.png) repeat;
+  .carousel-control
+    z-index: 20;
+
+  .carousel-caption
+    top: 17%;
+
+    .sliderHeader
+      text-align left
+
+
+  img
+    max-height: 606px;
+
+  > *
+    max-height: 540px;
+    overflow: hidden;
+
+  .carousel-caption h1
+    margin-bottom: 0px;
+
+  .carousel-caption.verical
+    top: 10%;
+
+
+
+
+@media (max-width: 1300px)
+  .b-slider .carousel-caption
+    padding-bottom: 30px;
+    right: 10%;
+    left: 15%;
+    top:-2%;
+
+
+@media (max-width: 1499px)
+  .b-slider .carousel-caption
+    top: 5%;
+    h1
+      font-size: 250%
+    p
+      font-size: 150%;
+
+
+@media (min-width: 1500px)
+
+  .b-slider .carousel-caption
+
+    h1
+      font-size: 400%
+    p
+      font-size: 150%;
+
+
+@media (max-width: 990px)
+  .b-slider .carousel-caption
+    h1
+      font-size: 200%
+    p
+      font-size: 100%;
