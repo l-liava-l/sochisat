@@ -1,28 +1,69 @@
-div(class="b-header")
+div(class="header")
     nav(class="navbar navbar-default" role="navigation")
         div(class="container")
             div(class="container-fluid")
-                div(class="navbar-header")
-                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
-                         span(class="sr-only")
-                         span(class="icon-bar")
-                         span(class="icon-bar")
-                         span(class="icon-bar")
-                    a(class="logo navbar-brand") SOCHI<color class="red-color">SAT</color>
+                div(class="navbar-header hidden-xs")
+                    a(class="logo navbar-brand")
+                        img(src="img/logo.png" style="max-height: 40px;")
 
-                div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
-                    ul(class="nav navbar-nav hidden-sm")
-                        li(class="active")
-                            a(href="#b-about") О компании
-                         li
-                            a(href="#b-comments") Отзывы
+                //phones
+                div(class="visible-xs")
+                    ul(class="nav nav-xs navbar-nav col-xs-12 mainMenu")
+
+                        a(class="logo navbar-brand col-xs-2")
+                            img(src="img/logoXS.png" style="max-height: 30px")
+
+                        li(class="active col-xs-4")
+                            a(href="/") О компании
+
+                        li(class="dropdown col-xs-3")
+                            a(href="#" class="dropdown-toggle" data-toggle="dropdown") Услуги
+                                span( class="caret")
+                            ul(class="dropdown-menu" role="menu")
+                                li
+                                    a(href="cctv.html") Видеонаблюдение
+                                li
+                                    a(href="intercoms.html") Домофоны
 
 
-                    ul(class="nav navbar-nav navbar-right")
+
+                        li(class="col-xs-3")
+                            a(data-toggle="modal" data-target="#information-modal") Контакты
+
+                //tablets and desktops
+                div(class="hidden-xs")
+                    ul(class="nav navbar-nav main-menu")
+
                         li
-                            a(class="glyphicon glyphicon-envelope" href="#")  mail@sochisat.ru
+                            a(href="/") О компании
+                        li(class="dropdown")
+
+                            a(href="#" class="dropdown-toggle" data-toggle="dropdown") Услуги
+                                span( class="caret")
+
+                            ul(class="dropdown-menu" role="menu")
+                                li
+                                    a(href="cctv.html") Видеонаблюдение
+                                li
+                                    a(href="intercoms.html") Домофоны
+                                li
+                                    a(href="sec.html") Охранные сигнализации
+
+
                         li
-                            a(class="glyphicon glyphicon-phone-alt" href="#")  8(862)237-27-30
+                            a(data-toggle="modal" data-target="#information-modal") Контакты
+
+
+                    ul(class="nav navbar-nav navbar-right hidden-sm")
                         li
-                            a(class="glyphicon glyphicon-earphone" href="#")  8(918)601-41-81
+                            a(class="glyphicon contact glyphicon-envelope")  sochisat@mail.ru
+                        li
+                            a(class="glyphicon contact glyphicon-phone-alt")  8(862)237-27-30
+                        li
+                            a(class="glyphicon contact glyphicon-earphone")  8(918)601-41-81
+
+div(class="margin-header")
+
+
+
 

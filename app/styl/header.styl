@@ -1,0 +1,65 @@
+.margin-header
+  display: block
+  min-height: 50px
+
+.header
+  font-family: 'Roboto';
+  position: fixed;
+  z-index: 22;
+  margin: 0 0 30px 0;
+  min-width: 100%;
+  padding: 0;
+
+  .logo
+    margin-top: -10px;
+    font-size: 170%;
+  nav
+    min-height: 0px;
+    background: #ffffff;
+    border-radius: 0px;
+
+  nav:after
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    content: '';
+    opacity: 0.3;
+    z-index: 90;
+
+  .contact, .contact:hover
+    color: #282828 !important;
+
+
+@media (max-width: 1024px)
+  .header
+    .logo
+      font-size: 150%;
+
+    .main-menu > li  a
+      padding-left: 10px;
+      padding-right: 10px;
+
+
+
+@media (max-width: 767px)
+  .header
+      .nav-xs li
+        text-align: center;
+        padding: 2px;
+        min-height: 100%;
+        a
+          min-height: 100%;
+          padding: 10px 0 10px 0;
+          margin: 2px
+      .main-menu
+        padding: 0px;
+
+
+@media (max-width: 1200px)
+  .header .container
+    width: 100%;
+    padding: 0
+    margin: 0
