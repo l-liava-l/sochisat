@@ -3,16 +3,27 @@ div(class="b-slider" class="hidden-xs")
         div(class="carousel-inner")
             div(class="item active building active")
                 img(src="img/slides/empty.png" alt="...")
-                div(class="carousel-caption verical fadein row")
-                    div(class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6  col-md-6  col-sm-6")
+                div(class="carousel-caption fadein row")
+                    div(class="sliderHeader col-md-7 col-lg-6 col-sm-6")
+                        h1 Слаботочные
+                            small  системы
+                        p( class="text-right text-gold") Продажа, монтаж, обслуживание
+                        p
+                        p Спутниковое ТВ (<gold-light>НТВ+</gold-light>, <gold-light>ТРИКОЛОР</gold-light>)
+                        p Видеонаблюдение и домофоны
+                        p СКУД, охранная сигнализация
+                        p Ремонт ПК и телевизоров
+
+                    div(class="col-lg-4 col-md-5 col-sm-5 col-lg-offset-1")
+                        div(class="visible-lg")
+                            br
+                            br
                         form(class="form-inline" role="form")
-                            div(class="visible-lg")
-                                h1 Слаботочные
-                                    small  системы
-                                p( class="text-right text-gold") Продажа, монтаж, ремонт
                             h3 Перезвонить Вам?
                             div(class="form-group")
+                                label(class="sr-only" for="form-name") ФИО
                                 input(type="email" class="form-control input-lg" id="form-name" placeholder="ФИО")
                                 br
+                                label(class="sr-only" for="form-contacts") Email или телефон
                                 input(type="email" class="form-control input-lg" id="form-contacts" placeholder="Email или телефон")
-                                button(type="button" class="btn btn-success btn-lg btn-block") Отправить
+                                button(type="button" class="btn btn-warning btn-lg btn-block") Отправить
