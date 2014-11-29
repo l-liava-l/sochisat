@@ -13,12 +13,12 @@ html(lang="ru")
     body(ng-app="sochisat" data-spy="scroll" data-target=".navbar-collapse")
         include ../../blocks/header/header.static.jade
         include ../../blocks/modal-inform/modal-inform.static.jade
-
         include ./blocks/big-img.static.jade
-        include ./blocks/about.static.jade
-        include ./blocks/services.static.jade
+        div(class="fadein")
+            include ./blocks/about.static.jade
+            include ./blocks/services.static.jade
 
-        include ../../blocks/footer/footer.static.jade
+            include ../../blocks/footer/footer.static.jade
 
     script setPage('/');
 
